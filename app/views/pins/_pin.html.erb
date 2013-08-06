@@ -8,7 +8,7 @@
 			Posted by <%= pin.user.name %>
 		</strong>
 	</p>	
-	<%= link_to 'Show', pin %>
+	<!--	<%= link_to 'Show', pin %> -->
 	<% if current_user == pin.user %>
 		<p>
 			<%= link_to 'Edit', edit_pin_path(pin) %>

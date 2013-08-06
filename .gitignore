@@ -33,5 +33,9 @@ capybara-*.html
 rerun.txt
 pickle-email-*.html
 .project
+
 # Ignore Paperclip uploaded files
 /public/system
+
+# Ignore sampleimages
+/sampleimage

@@ -1,11 +1,14 @@
 Omrails::Application.routes.draw do
 
+  get "user/show"
+
   resources :pins
 
-
   devise_for :users
+  match 'users/:id' => 'user#show', as: :user
 
   root :to => 'pins#index'
+  
   get 'about' => 'pages#about'
 
   # The priority is based upon order of creation:
